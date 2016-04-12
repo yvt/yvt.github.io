@@ -1,10 +1,10 @@
-$blockquote: $type-border !default;
-$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
-$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
-$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
-$heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
-$header-title-font-family: $heading-font-family !default;
-$header-subtitle-font-family: $heading-font-family !default;
+$blockquote: $type-border;
+$sans: "myriad-pro-semiextended", "kozuka-gothic-pro", sans-serif;
+$serif: "PT Serif", Georgia, Times, "Times New Roman", serif;
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+$heading-font-family: $sans;
+$header-title-font-family: $heading-font-family;
+$header-subtitle-font-family: $heading-font-family;
 
 // Fonts
 .heading {
@@ -18,7 +18,7 @@ body > header h1 {
   font-size: 2.2em;
   @extend .heading;
   font-family: $header-title-font-family;
-  font-weight: normal;
+  font-weight: 200;
   line-height: 1.2em;
   margin-bottom: 0.6667em;
 }
@@ -29,7 +29,8 @@ body > header h2 {
 body {
   line-height: 1.5em;
   color: $text-color;
-  @extend .serif;
+  @extend .sans;
+  font-weight: 200;
 }
 h1 {
   font-size: 2.2em;
@@ -45,7 +46,8 @@ h1 {
   @extend .heading;
   text-rendering: optimizelegibility;
   margin-bottom: 1em;
-  font-weight: bold;
+  font-weight: 200;
+  color: #444;
 }
 h2, section h1 {
   font-size: 1.5em;
