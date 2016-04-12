@@ -7,4 +7,13 @@ comments: true
 categories: 
 ---
 
-Every journey starts with a first step...
+Every journey starts with a single step...
+
+<!--more-->
+
+数式表示テスト
+--------------
+
+$$
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+$$
