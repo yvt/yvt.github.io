@@ -50,7 +50,7 @@ h1 {
   color: #444;
 }
 h2, section h1 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 h3, section h2, section section h1 {
   font-size: 1.3em;
@@ -65,7 +65,7 @@ h6, section h5, section section h4, section section section h3 {
   font-size: .8em;
 }
 
-p, article blockquote, ul, ol { margin-bottom: 1.5em; }
+p, article blockquote, ul, ol { margin-bottom: 1.5em; line-height: 1.8em; }
 
 ul { list-style-type: disc;
   ul { list-style-type: circle; margin-bottom: 0px;
@@ -78,7 +78,7 @@ ol { list-style-type: decimal;
 ul, ol { &, ul, ol { margin-left: 1.3em; }}
 ul, ol { ul, ol { margin-bottom: 0em; }}
 
-strong { font-weight: bold; }
+strong, dfn { font-weight: 500; }
 
 em { font-style: italic; }
 
@@ -92,8 +92,6 @@ q { font-style: italic;
 }
 
 em, dfn { font-style: italic; }
-
-strong, dfn { font-weight: bold; }
 
 del, s { text-decoration: line-through; }
 
