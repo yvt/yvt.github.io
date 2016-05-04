@@ -20,3 +20,23 @@ CSSでパイチャートを描画するのは以前から行われてきまし�
 
 [JSFiddle](https://jsfiddle.net/yvtjp/3e5g2gd6/3/)で動作デモをご覧になれます。
 ソースコード(SCSS)と、そのまま使えるコンパイル済みCSSファイルをMITライセンスで[GitHub](https://github.com/yvt/pure-css-pie/releases)にて配布中です。
+
+使用方法
+--------
+
+基本的な使い方は[JSFiddleのエントリ](https://jsfiddle.net/yvtjp/3e5g2gd6/3/)を参考にして下さい。
+JSFiddleではCSSクラスにより角度を制御していますが、角度を直接指定したい場合には以下のようにします。
+
+```js
+/**
+ * <code>pie</code>の円弧の角度を設定する。
+ * @param pie 設定対象の円弧のHTML要素。
+ * @param angle 円弧の角度を [0, 360] の範囲で指定する。
+ */
+function setAngle(pie, angle) {
+    $(pie).find(".pcp-rot.full").css("transform", `rotate(${+angle}deg)`);
+    $(pie).find(".pcp-rot.half").css("transform", `rotate(${angle / 2}deg)`);
+}
+```
+
+注: css関数の第二引数にはECMAScript 2015の[テンプレート文字列](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/template_strings)機能を使用して値を指定しています。古いブラウザをターゲットとする場合は、文字列連結に置き換えてください。
