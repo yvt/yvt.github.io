@@ -20,7 +20,7 @@ categories: [Graphics]
 
 アンチエイリアシングにより上部のエッジが数段階の色で表現されてしまっています。
 この原因は、ある箇所の色が離れた箇所の中間色を近似するのに用いられてしまうことです。
-そこで、隣接した領域の色のみを用いることにより、この現象を起こりにくくした[減色ツールを作ってみました](https://cdn.rawgit.com/yvt/cutout-assistant/0.1.0/index.html)。
+そこで、隣接した領域の色のみを用いることにより、この現象を起こりにくくした[減色ツールを作ってみました](https://cdn.rawgit.com/yvt/cutout-assistant/0.1.1/index.html)。
 
 ソースコードは[GitHub](https://github.com/yvt/cutout-assistant)に上げてあります。
 プルリクエスト大歓迎です。
